@@ -1,0 +1,36 @@
+@model QBO.Shared.CustomerResponse
+
+@{
+    ViewData["Title"] = "Customers";
+}
+
+<h2>Customers</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Display Name</th>
+            <th>Company Name</th>
+            <th>Balance</th>
+            <th>Currency</th>
+            <th>Preferred Delivery Method</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model != null && Model.QueryResponse != null && Model.QueryResponse.Customer != null)
+        {
+            foreach (var customer in Model.QueryResponse.Customer)
+            {
+                <tr>
+                    <td>@customer.Id</td>
+                    <td>@customer.DisplayName</td>
+                    <td>@customer.CompanyName</td>
+                    <td>@customer.Balance</td>
+                    <td>@customer.CurrencyRef?.name</td>
+                    <td>@customer.PreferredDeliveryMethod</td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>

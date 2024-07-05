@@ -1,0 +1,9 @@
+{
+  "AccessToken": "",
+  "RefreshToken": "",
+  "RealmId": "",
+  "ClientId": "",
+  "ClientSecret": "",
+  "RedirectUrl": "https://localhost:7106/Receiver",
+  "Environment": "sandbox"
+}

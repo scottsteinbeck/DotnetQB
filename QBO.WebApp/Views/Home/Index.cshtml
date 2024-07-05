@@ -1,0 +1,7 @@
+﻿@model HomeViewModel
+@{
+	ViewData["Title"] = @Model.Title;
+}
+
+<h2>@Model.Title</h2>
+<a href="@Url.Action("GetCustomers", "Home")">Get Customers</a>
