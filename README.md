@@ -1,4 +1,4 @@
-..# Quickbooks Online - OAuth2 and Quickbooks Integration
+# Quickbooks Online - OAuth2 and Quickbooks Integration
 
 This app has been created as a .Net Core MVC App with a shared external resource (QBO.Shared) for communicating with Quickbooks API
 
